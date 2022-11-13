@@ -5,6 +5,8 @@ const { token } = require('./config.json')
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
+console.log(process.env.token)
+
 // Register Commands
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
