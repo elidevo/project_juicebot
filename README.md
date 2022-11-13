@@ -19,10 +19,10 @@ python -m venv pyenv
 pip install -r requirements.txt
 ```
 
-### 3.) Put your discord bot's token and userId within the config.json
+### 4.) Put your discord bot's token and userId within the config.json
 
-### 4.) Run the bot
+### 5.) Run the bot
 
 ```npm start```
 
-### 5.) Voila!
+### 6.) Voila!
