@@ -1,0 +1,17 @@
+{
+  "name": "project_juicebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "wanted4larceny",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}
