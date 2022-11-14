@@ -5,8 +5,6 @@ const { token } = require('./config.json')
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-console.log(process.env.token)
-
 // Register Commands
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
@@ -17,7 +15,6 @@ for (const file of commandFiles) {
 	const command = require(filePath);
 	client.commands.set(command.data.name, command);
 }
-
 
 // ClientReady Event
 client.once(Events.ClientReady, () => {
@@ -41,4 +38,4 @@ client.on(Events.InteractionCreate, async interaction => {
 	}
 });
 
-client.login(process.env.token);
+client.login(token);
