@@ -18,7 +18,7 @@ for (const file of commandFiles) {
 
 // ClientReady Event
 client.once(Events.ClientReady, () => {
-	console.log('Ready!');
+	console.log('Bot ready for commands!');
 });
 
 
