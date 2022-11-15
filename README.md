@@ -1,4 +1,5 @@
-# project_juicebot
+![](output.png)
+
 A discord bot, written in Node.js, utilizing the discord.js library.
 
 # Features
@@ -9,6 +10,8 @@ English alphabet string to pigpen cipher, automatically sanitizes spaces, commas
 
 * Init discord.js skeleton
 * Pigpen functionality
+* Ability to change color of pigpen characters
+* Ability to convert from text to pigpen emojis
 
 # How do I use it?
 
