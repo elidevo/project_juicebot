@@ -6,3 +6,6 @@ pyenv/
 
 # The file containing environment variables 
 config.json
+
+output.png
+sbox.js
