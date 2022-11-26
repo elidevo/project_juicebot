@@ -5,22 +5,6 @@ const { execSync } = require("child_process");
 
 // https://discordjs.guide/slash-commands/parsing-options.html#subcommands
 module.exports = {
-	helpS2PText: `Usage: s2p STRING SCRAMBLED [OPTIONS]
-
-  Returns an image of the supplied STRING and optionally SCRAMBLED.
-
-Options:
-	--color  The string corresponding to the color you want to use (case insensitive).`,
-
-//////////////////////////////////////////////////////////////////////////
-
-	helpS2EText: `Usage: s2e STRING SCRAMBLED
-
-  Returns a sequence of pigpen emojis, created from the supplied STRING, and optionally SCRAMBLED.
-
-Options:
-	No options to show.`,
-
 	data: new SlashCommandBuilder()
 		.setName("pigpenimage")
 		.setDescription("Converts a string into an image containing the corresponding pigpen cipher..")
