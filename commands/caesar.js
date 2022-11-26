@@ -48,10 +48,10 @@ module.exports = {
 			.setRequired(true)
 		).addIntegerOption(option =>
 			option.setName("offset")
-            .setDescription("How much to offset the input by? 1-25")
-            .setMinValue(1)
-            .setMaxValue(25)
-            .setRequired(true)
+			.setDescription("How much to offset the input by? 1-25")
+			.setMinValue(1)
+			.setMaxValue(25)
+			.setRequired(true)
 		)
 	,
 
