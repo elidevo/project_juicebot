@@ -24,12 +24,7 @@ function stringToCeasar(string, offset, scrambled){
 		}
 	}
 
-	if (scrambled) {
-		return str.split('').sort(function(){return 0.5-Math.random()}).join('');
-	}
-
-
-	return str;
+	return scrambled ? str.split('').sort(function(){return 0.5-Math.random()}).join('') : str;
 }
 
 
@@ -60,7 +55,7 @@ module.exports = {
 		const scrambled = interaction.options.getBoolean("scrambled")
 		const offset = interaction.options.getInteger("offset")
 
-		await interaction.reply(stringToCeasar(string, offset, scrambled));
+		await interaction.reply(`Here you go.. :grapes:\n\n${stringToCeasar(string, offset, scrambled)}`);
 
 	}
 };

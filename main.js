@@ -6,6 +6,8 @@ const { token } = require('./config.json')
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // Register Commands
+
+// TODO - MAKE C++ INJECTABLE SELFBOT FOR ADVERTISING PURPOSES
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
